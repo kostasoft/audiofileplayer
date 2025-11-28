@@ -25,17 +25,19 @@ apply plugin: 'com.android.library'
 
 android {
 	namespace 'com.google.flutter.plugins.audiofileplayer'
-    compileSdkVersion 31
+    buildToolsVersion '36.1.0'
+    compileSdkVersion rootProject.ext.compileSdkVersionProject
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersionProject
+        targetSdkVersion rootProject.ext.targetSdkVersionProject
+    }
+
 	
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-    defaultConfig {
-        minSdkVersion 16
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
     lintOptions {
         disable 'InvalidPackage'
     }
