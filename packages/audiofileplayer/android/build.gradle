@@ -24,6 +24,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
+	namespace 'com.google.flutter.plugins.audiofileplayer'
     compileSdkVersion 31
 	
     compileOptions {
@@ -32,6 +33,7 @@ android {
     }
 
     defaultConfig {
+		applicationId 'com.google.flutter.plugins.audiofileplayer'
         minSdkVersion 16
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
