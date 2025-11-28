@@ -33,7 +33,6 @@ android {
     }
 
     defaultConfig {
-		applicationId 'com.google.flutter.plugins.audiofileplayer'
         minSdkVersion 16
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
